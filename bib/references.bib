@@ -1,0 +1,132 @@
+@article{electronics11244211,
+  author = {Li, Gang and Zhao, Shilong and Zhou, Mingle and Li, Min and Shao, Rui and Zhang, Zekai and Han, Delong},
+  title = {YOLO-RFF: An Industrial Defect Detection Method Based on Expanded Field of Feeling and Feature Fusion},
+  journal = {Electronics},
+  volume = {11},
+  year = {2022},
+  number = {24},
+  article-number = {4211},
+  url = {https://www.mdpi.com/2079-9292/11/24/4211},
+  issn = {2079-9292},
+  abstract = {Aiming at the problems of low efficiency, high false detection rate, and poor real-time performance of current industrial defect detection methods, this paper proposes an industrial defect detection method based on an expanded perceptual field and feature fusion for practical industrial applications. First, to improve the real-time performance of the network, the original network structure is enhanced by using depth-separable convolution to reduce the computation while ensuring the detection accuracy, and the critical information extraction from the feature map is enhanced by using MECA (More Efficient Channel Attention) attention to the detection network. To reduce the loss of small target detail information caused by the pooling operation, the ASPF (Atrous Spatial Pyramid Fast) module is constructed using dilate convolution with different void rates to extract more contextual information. Secondly, a new feature fusion method is proposed to fuse more detailed information by introducing a shallower feature map and using a dense multiscale weighting method to improve detection accuracy. Finally, in the model optimization process, the K-means++ algorithm is used to reconstruct the prediction frame to speed up the model’s convergence and verify the effectiveness of the combination of the Mish activation function and the SIoU loss function. The NEU-DET steel dataset and PCB dataset is used to test the effectiveness of the proposed model, and compared to the original YOLOv5s, our method in terms of mAP metrics by 6.5% and 1.4%, and in F1 by 5.74% and 1.33%, enabling fast detection of industrial surface defects to meet the needs of real industry.},
+  doi = {10.3390/electronics11244211}
+}
+
+@misc{Li2022,
+  abstract = {Many vision-based methods for printed label defect detection have been proposed to replace inefficient manual inspection. However, due to the existence of artifacts and noise regions, it usually leads to a large number of misjudgments. Also, since most of the printed labels are non-rigid, they are prone to local deformation, which will cause lots of artifacts after image subtraction. This paper proposes a novel printed label defect detection framework (PLDD), which performs twice gradient matching based on improved cosine similarity measures. The overall idea is based on comparing a golden master (GM) image with test images, thus the GM image is demanded. Specifically, latent defect candidates will be extracted firstly from RGB sub-images for artifact elimination. Mask mechanism is also introduced to eliminate the influence of background gradient features around these defect candidates. Experiments compared with existing methods are conducted with three industrial datasets. The results exhibit that PLDD achieves a high mean F 1 score (0.9702), and only 103 false positives (F P) occurred in 44,628 ground truths. Defects are being detected in real-time with an average time consuming of 0.26362 seconds.},
+  author = {Dongming Li and Jinxing Li and Yuanyi Fan and Guangming Lu and Jie Ge and Xiaoyang Liu},
+  keywords = {artifact,cosine similarity,gradient matching,non-rigid local deformation,printed label defect detection},
+  title = {Printed label defect detection using twice gradient matching based on improved cosine similarity measure},
+  url = {https://www.elsevier.com/open-access/userlicense/1.0/},
+  year = {2022}
+}
+
+@article{Liu2023,
+  abstract = {Printing defects are extremely common in the manufacturing industry. Although some studies have been conducted to detect printing defects, the stability and practicality of the printing defect detection has received relatively little attention. Currently, printing defect detection is susceptible to external environmental interference such as illuminance and noise, which leads to poor detection rates and poor practicality. This research develops a printing defect detection method based on scale-adaptive template matching and image alignment. Firstly, the research introduces a convolutional neural network (CNN) to adaptively extract deep feature vectors from templates and target images at a low-resolution version. Then, a feature map cross-correlation (FMCC) matching metric is proposed to measure the similarity of the feature map between the templates and target images, and the matching position is achieved by a proposed location refinement method. Finally, the matching image and the template are both sent to the image alignment module, so as to detect printing defects. The experimental results show that the accuracy of the proposed method reaches 93.62%, which can quickly and accurately find the location of the defect. Simultaneously, it is also proven that our method achieves state-of-the-art defect detection performance with strong real-time detection and anti-interference capabilities.},
+  author = {Xinyu Liu and Yao Li and Yiyu Guo and Luoyu Zhou},
+  doi = {10.3390/s23094414},
+  issn = {14248220},
+  issue = {9},
+  journal = {Sensors},
+  keywords = {feature map cross-correlation (FMCC),image alignment,printing defect detection,template matching},
+  month = {5},
+  pmid = {37177617},
+  publisher = {MDPI},
+  title = {Printing Defect Detection Based on Scale-Adaptive Template Matching and Image Alignment},
+  volume = {23},
+  year = {2023}
+}
+
+@article{Liu2024,
+  abstract = {During the production process of inkjet printing labels, printing defects can occur, affecting the readability of product information. The distinctive shapes and subtlety of printing defects present a significant challenge for achieving high accuracy and rapid detection in existing deep learning-based defect detection systems. To overcome this problem, we propose an improved model based on the structure of the YOLOv5 network to enhance the detection performance of printing defects. The main improvements include the following: First, we introduce the C3-DCN module to replace the C3 module in the backbone network, enhancing the model’s ability to detect narrow and elongated defects. Secondly, we incorporate the Large Selective Kernel (LSK) and RepConv modules into the feature fusion network, while also integrating a loss function that combines Normalized Gaussian Wasserstein Distance (NWD) with Efficient IoU (EIoU) to enhance the model’s focus on small targets. Finally, we apply model pruning techniques to reduce the model’s size and parameter count, thereby achieving faster detection. Experimental results demonstrate that the improved YOLOv5 achieved a mAP@0.5 of 0.741 after training, with 323.2 FPS, which is 2.7 and 20.8% higher than that of YOLOv5, respectively. The method meets the requirements of high precision and high efficiency for printing defect detection.},
+  author = {Jie Liu and Zelong Cai and Kuanfang He and Chengqiang Huang and Xianxin Lin and Zhenyong Liu and Zhicong Li and Minsheng Chen},
+  doi = {10.3390/s24237429},
+  issn = {14248220},
+  issue = {23},
+  journal = {Sensors},
+  keywords = {YOLOv5,deep learning,printing defect detection},
+  month = {12},
+  publisher = {Multidisciplinary Digital Publishing Institute (MDPI)},
+  title = {An Efficient Printing Defect Detection Based on YOLOv5-DCN-LSK},
+  volume = {24},
+  year = {2024}
+}
+
+@inproceedings{Luo2024,
+  abstract = {Defect detection is essential in the steel production process. Recent years have seen significant advancements in steel surface defect detection based on deep learning methods, notably exemplified by the YOLO series models capable of precise and rapid detection. However, challenges arise due to the high complexity of surface textures on steel and the low recognition rates for minor defects, making real-time and accurate detection difficult. This study introduces Mobile-YOLO-SDD (Steel Defect Detection), a lightweight YOLO-based model designed with high accuracy for real-time steel defect detection. Firstly, based on the effective YOLOv5 algorithm for steel defect detection, the backbone network is replaced with MobileNetV2 to reduce the model size and computational complexity. Then, the ECA (Efficient Channel Attention) module was integrated into the C3 module to reduce the number of parameters further while maintaining the defect detection rate in complex backgrounds. Finally, the K-Means++ algorithm regenerates anchor boxes and determines optimal sizes, enhancing their adaptability to actual targets. Experimental results on NEU-DET data demonstrate that the improved algorithm achieves a 60.6% reduction in model size, a 60.8% reduction in FLOPs, and a 1.8% improvement in mAP compared to YOLOv5s. These results confirm the effectiveness of Mobile-YOLO-SDD and lay the foundation for subsequent lightweight deployment of steel defect detection models.},
+  author = {Shen Luo and Yuanping Xu and Ming Zhu and Chaolong Zhang and Chao Kong and Jin Jin and Tukun Li and Xiangqian Jiang and Benjun Guo},
+  booktitle = {Procedia CIRP},
+  doi = {10.1016/j.procir.2024.10.040},
+  issn = {22128271},
+  keywords = {Deep learning,ECA,K-Means++,MobileNetV2,Steel defect detection,Surface defect detection,YOLO},
+  pages = {228-233},
+  publisher = {Elsevier B.V.},
+  title = {Mobile-YOLO-SDD: A Lightweight YOLO for Real-time Steel Defect Detection},
+  volume = {129},
+  year = {2024}
+}
+
+@article{Peng2024,
+  abstract = {The process of printing defect detection usually suffers from challenges such as inaccurate defect extraction and localization, caused by uneven illumination and complex textures. Moreover, image difference-based defect detection methods often result in numerous small-scale pseudo defects. To address these challenges, this paper proposes a comprehensive defect detection approach that integrates brightness correction and a two-stage defect detection strategy for self-adhesive printed materials. Concretely, a joint bilateral filter coupled with brightness correction corrects uneven brightness properly, meanwhile smoothing the grid-like texture in complex printed material images. Then, in the first detection stage, an image difference method based on a bright–dark difference template group is designed to effectively locate printing defects despite slight brightness fluctuations. Afterward, a discriminative method based on feature similarity is employed to filter out small-scale pseudo-defects in the second detection stage. The experimental results show that the improved difference method achieves an average precision of 99.1% in defect localization on five different printing pattern samples. Furthermore, the second stage reduces the false detection rate to under 0.5% while maintaining the low missed rate.},
+  author = {Guifeng Peng and Tao Song and Songxiao Cao and Bin Zhou and Qing Jiang},
+  doi = {10.1038/s41598-024-71514-z},
+  issn = {20452322},
+  issue = {1},
+  journal = {Scientific Reports},
+  keywords = {Brightness correction,Defect detection,Image difference,Printing defect},
+  month = {12},
+  pmid = {39232131},
+  publisher = {Nature Research},
+  title = {A two-stage defect detection method for unevenly illuminated self-adhesive printed materials},
+  volume = {14},
+  year = {2024}
+}
+
+@misc{Qi2024,
+  abstract = {With the continuous advancement of industrial automation, product quality inspection has become increasingly important in the manufacturing process. Traditional inspection methods, which often rely on manual checks or simple machine vision techniques, suffer from low efficiency and insufficient accuracy. In recent years, deep learning technology, especially the YOLO (You Only Look Once) algorithm, has emerged as a prominent solution in the field of product defect detection due to its efficient real-time detection capabilities and excellent classification performance. This study aims to use the YOLO algorithm to detect and classify defects in product images. By constructing and training a YOLO model, we conducted experiments on multiple industrial product datasets. The results demonstrate that this method can achieve real-time detection while maintaining high detection accuracy, significantly improving the efficiency and accuracy of product quality inspection. This paper further analyzes the advantages and limitations of the YOLO algorithm in practical applications and explores future research directions.},
+  author = {Zhen Qi and Liwei Ding and Xiangtian Li and Jiacheng Hu and Bin Lyu and Ao Xiang},
+  keywords = {Product defect detection,YOLO,deep learning,industrial automation,real-time detection},
+  title = {Detecting and Classifying Defective Products in Images Using YOLO},
+  year = {2024}
+}
+
+@misc{Ren2022,
+  abstract = {Machine vision significantly improves the efficiency, quality, and reliability of defect detection. In visual inspection, excellent optical illumination platforms and suitable image acquisition hardware are the prerequisites for obtaining high-quality images. Image processing and analysis are key technologies in obtaining defect information, while deep learning is significantly impacting the field of image analysis. In this study, a brief history and the state of the art in optical illumination, image acquisition, image processing, and image analysis in the field of visual inspection are systematically discussed. The latest developments in industrial defect detection based on machine vision are introduced. In the further development of the field of visual inspection, the application of deep learning will play an increasingly important role. Thus, a detailed description of the application of deep learning in defect classification, localization and segmentation follows the discussion of traditional defect detection algorithms. Finally, future prospects for the development of visual inspection technology are explored.},
+  author = {Zhonghe Ren and Fengzhou Fang and Ning Yan and You Wu},
+  doi = {10.1007/s40684-021-00343-6},
+  issn = {21980810},
+  issue = {2},
+  journal = {International Journal of Precision Engineering and Manufacturing - Green Technology},
+  keywords = {Deep learning,Defect detection,Image processing,Machine vision},
+  month = {3},
+  pages = {661-691},
+  publisher = {Korean Society for Precision Engineeing},
+  title = {State of the Art in Defect Detection Based on Machine Vision},
+  volume = {9},
+  year = {2022}
+}
+
+@article{Valente2020,
+  abstract = {Efficient automated print defect mapping is valuable to the printing industry since such defects directly influence customer-perceived printer quality and manually mapping them is cost-ineffective. Conventional methods consist of complicated and hand-crafted feature engineering techniques, usually targeting only one type of defect. In this paper, we propose the first end-to-end framework to map print defects at pixel level, adopting an approach based on semantic segmentation. Our framework uses Convolutional Neural Networks, specifically DeepLab-v3+, and achieves promising results in the identification of defects in printed images. We use synthetic training data by simulating two types of print defects and a print-scan effect with image processing and computer graphic techniques. Compared with conventional methods, our framework is versatile, allowing two inference strategies, one being near real-time and providing coarser results, and the other focusing on offline processing with more fine-grained detection. Our model is evaluated on a dataset of real printed images.},
+  author = {Augusto C. Valente and Cristina Wada and Deangela Neves and Deangeli Neves and Fábio V. M. Perez and Guilherme A. S. Megeto and Marcos H. Cascone and Otavio Gomes and Qian Lin},
+  month = {1},
+  title = {Print Defect Mapping with Semantic Segmentation},
+  url = {http://arxiv.org/abs/2001.10111},
+  year = {2020}
+}
+
+@article{Zhang2019,
+  abstract = {Deep learning has been successfully applied to classification tasks in many fields due to its good performance in learning discriminative features. However, the application of deep learning to printing defect classification is very rare, and there is almost no research on the classification method for printing defects with imbalanced samples. In this paper, we present a deep convolutional neural network model to extract deep features directly from printed image defects. Furthermore, considering the asymmetry in the number of different types of defect samples-that is, the number of different kinds of defect samples is unbalanced-seven types of over-sampling methods were investigated to determine the best method. To verify the practical applications of the proposed deep model and the effectiveness of the extracted features, a large dataset of printing detect samples was built. All samples were collected from practical printing products in the factory. The dataset includes a coarse-grained dataset with four types of printing samples and a fine-grained dataset with eleven types of printing samples. The experimental results show that the proposed deep model achieves a 96.86% classification accuracy rate on the coarse-grained dataset without adopting over-sampling, which is the highest accuracy compared to the well-known deep models based on transfer learning. Moreover, by adopting the proposed deep model combined with the SVM-SMOTE over-sampling method, the accuracy rate is improved by more than 20% in the fine-grained dataset compared to the method without over-sampling.},
+  author = {Erhu Zhang and Bo Li and Peilin Li and Yajun Chen},
+  doi = {10.3390/SYM11121440},
+  issn = {20738994},
+  issue = {12},
+  journal = {Symmetry},
+  keywords = {Deep convolutional neural network,Feature extraction,Imbalance learning,Printing defect classification},
+  month = {12},
+  publisher = {MDPI AG},
+  title = {A deep learning based printing defect classification method with imbalanced samples},
+  volume = {11},
+  year = {2019}
+}
+
